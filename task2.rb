@@ -1,10 +1,13 @@
 require 'matrix'
-n = 8
 
+def function2(vector)
+  Math.sqrt(vector.inject(0) {|res, e| res + e**2})
+end
+
+n = 8
 x = Vector[ *Array.new(n) { rand(10) } ]
 
-result = x.inject(0) {|res, e| res + e**2}
-result = Math.sqrt(result)
+result = function2(x)
 
 print "\nInput:\n #{x}\n\n"
 print "Result is #{result}\n"

@@ -1,4 +1,4 @@
-def function(array, n)
+def function1(array, n)
   arr = Array.new(array)
   arr.each do |e|
     next if e == n
@@ -13,7 +13,7 @@ def function(array, n)
 end
 
 c_before = Array.new(16) { rand(30) }
-c_after =  function(c_before, -1)
+c_after =  function1(c_before, -1)
 
 c_before.each_index do |i|
   print c_before[i], "  ==>  ", c_after[i], "\n"
