@@ -16,7 +16,7 @@ def function3(n, k)
 
   print "\nInput:\n n = #{n}\n k = #{k}\n"
   a.each_index do |row|
-    print " ", a[row].map{|i| i.to_i}, "   [", b[row].to_i, "]\n"
+    print " ", a[row].map{|l| l.to_i}, "   [", b[row].to_i, "]\n"
   end
 
   for e in (0 .. n-1) do
