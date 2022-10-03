@@ -1,7 +1,7 @@
 require 'matrix'
 
 def function2(vector)
-  Math.sqrt(vector.inject(0) {|res, e| res + e**2})
+  vector.norm
 end
 
 n = 8
